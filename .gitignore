@@ -1,0 +1,40 @@
+# .NET build output
+**/bin/
+**/obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+TestResults/
+*.vsix
+*.nupkg
+
+# Visual Studio and IDE state
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+
+# Local configuration and secrets
+*.local
+*.local.*
+settings.txt
+.env
+.env.*
+!.env.example
+secrets/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini

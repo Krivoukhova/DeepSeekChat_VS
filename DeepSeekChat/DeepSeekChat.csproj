@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Out-of-process extension: runs outside devenv.exe, so it installs without restarting Visual Studio. -->
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>DeepSeekChat</RootNamespace>
+    <AssemblyName>DeepSeekChat</AssemblyName>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Both package versions must match. -->
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.*" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Localized command names for the VS host: referenced as %Key% in command configurations. -->
+    <None Remove=".vsextension\**\string-resources.json" />
+    <Content Include=".vsextension\**\string-resources.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Remote UI XAML must be an embedded resource whose name matches the RemoteUserControl class. -->
+    <EmbeddedResource Include="UI\DeepSeekChatContent.xaml" LogicalName="DeepSeekChat.UI.DeepSeekChatContent.xaml" />
+    <Page Remove="UI\DeepSeekChatContent.xaml" />
+    <EmbeddedResource Include="Resources\robot_avatar.png" LogicalName="DeepSeekChat.Resources.robot_avatar.png" />
+  </ItemGroup>
+
+</Project>
