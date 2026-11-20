@@ -16,10 +16,10 @@ internal sealed class DeepSeekChatExtension : Microsoft.VisualStudio.Extensibili
     public override ExtensionConfiguration ExtensionConfiguration => new()
     {
         Metadata = new(
-            id: "DeepSeekChat.5b0f2c7e-8a41-4f6d-9d3a-6c1e2b7a90f4",
+            id: "DeepSeekChatVS.086a659d-7148-4a0f-8edb-498687ffd499",
             version: this.ExtensionAssemblyVersion,
             publisherName: "Krivoukhova",
-            displayName: "DeepSeek Chat",
+            displayName: "DeepSeek AI Assistant",
             description: "DeepSeek AI assistant integrated into Visual Studio for working with code."),
     };
 

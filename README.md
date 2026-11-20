@@ -1,4 +1,4 @@
-# DeepSeek Chat for Visual Studio
+# DeepSeek AI Assistant for Visual Studio
 
 [![Build](https://github.com/Krivoukhova/DeepSeekChat_VS/actions/workflows/build.yml/badge.svg)](https://github.com/Krivoukhova/DeepSeekChat_VS/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -12,7 +12,7 @@ for explaining and refactoring selected code.
 
 ## Features
 
-- Chat tool window available from **View → Other Windows → DeepSeek Chat**.
+- Chat tool window available from **View → Other Windows → DeepSeek AI Assistant**.
 - **Explain with DeepSeek** and **Refactor with DeepSeek** editor commands for selected code.
 - File and image attachments.
 - Model selection, chat history with conversation context sent to the model, account balance/key status, and configurable display name.
@@ -39,7 +39,7 @@ The extension targets `net8.0-windows8.0` and references the 17.14
 1. Download the release `.vsix` asset from the repository's **Releases** page.
 2. Close Visual Studio if the installer requests it.
 3. Open the `.vsix` file and follow the Visual Studio Installer prompts.
-4. Start Visual Studio and open **View → Other Windows → DeepSeek Chat**.
+4. Start Visual Studio and open **View → Other Windows → DeepSeek AI Assistant**.
 5. Add your DeepSeek API key in the extension's account/settings interface.
 
 ### Build from source
@@ -59,7 +59,7 @@ framework; locate `DeepSeekChat.vsix` under `DeepSeekChat/bin/Release/`.
 ## Configure
 
 1. Obtain an API key from the official [DeepSeek platform](https://platform.deepseek.com/).
-2. Open DeepSeek Chat in Visual Studio.
+2. Open DeepSeek AI Assistant in Visual Studio.
 3. Enter and save the API key in the account/settings UI.
 4. Choose the model and preferences you want to use.
 

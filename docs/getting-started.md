@@ -1,7 +1,7 @@
 # Getting started
 
 1. Install the extension using the [README](../README.md#install).
-2. In Visual Studio, open **View → Other Windows → DeepSeek Chat**.
+2. In Visual Studio, open **View → Other Windows → DeepSeek AI Assistant**.
 3. Open the account or settings interface and provide an API key obtained from the [DeepSeek Platform](https://platform.deepseek.com/).
 4. Select an available model.
 5. Enter a prompt and submit it to start a conversation.

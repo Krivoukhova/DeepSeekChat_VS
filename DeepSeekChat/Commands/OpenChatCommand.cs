@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.Extensibility.Shell;
 namespace DeepSeekChat.Commands;
 
 /// <summary>
-/// The "View → DeepSeek Chat" command: opens the chat window.
+/// The "View → DeepSeek AI Assistant" command: opens the chat window.
 /// </summary>
 [VisualStudioContribution]
 internal sealed class OpenChatCommand : Command

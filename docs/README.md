@@ -1,6 +1,6 @@
 # Documentation
 
-Guides for **DeepSeek Chat for Visual Studio**. Installation, features and local data are described in the [README](../README.md).
+Guides for **DeepSeek AI Assistant for Visual Studio**. Installation, features and local data are described in the [README](../README.md).
 
 - [Getting started](getting-started.md): open the tool window, configure the API key, start a conversation.
 - [Architecture](architecture.md): solution layout and main components.

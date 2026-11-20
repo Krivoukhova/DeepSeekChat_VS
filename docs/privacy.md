@@ -1,6 +1,6 @@
 # Privacy and security
 
-DeepSeek Chat sends prompt content to the DeepSeek API when a user submits a request. Depending on the operation, this may include selected source code, conversation content, and attached files or images.
+DeepSeek AI Assistant sends prompt content to the DeepSeek API when a user submits a request. Depending on the operation, this may include selected source code, conversation content, and attached files or images.
 
 Do not submit credentials, secrets, personal information, or proprietary source code unless you are authorized to share that information with the service. Review DeepSeek's current privacy terms and API documentation before use.
 

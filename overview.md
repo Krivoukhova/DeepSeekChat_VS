@@ -1,6 +1,6 @@
 <div align="center">
 
-# DeepSeek Chat
+# DeepSeek AI Assistant
 
 **AI coding assistant for Visual Studio 2022 and 2026**
 
@@ -11,7 +11,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Krivoukhova/DeepSeekChat_VS/master/docs/images/main.png" alt="DeepSeek Chat in Visual Studio">
+  <img src="https://raw.githubusercontent.com/Krivoukhova/DeepSeekChat_VS/master/docs/images/main.png" alt="DeepSeek AI Assistant in Visual Studio">
 </p>
 
 ## Features
@@ -32,7 +32,7 @@
 Chat with DeepSeek directly inside Visual Studio.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Krivoukhova/DeepSeekChat_VS/master/docs/images/chat.png" alt="DeepSeek Chat">
+  <img src="https://raw.githubusercontent.com/Krivoukhova/DeepSeekChat_VS/master/docs/images/chat.png" alt="DeepSeek AI Assistant">
 </p>
 
 ## Explain Code
@@ -106,8 +106,8 @@ Configure your DeepSeek API key, language, theme and display name directly from 
 
 ## Getting Started
 
-1. Install **DeepSeek Chat**.
-2. Open **View → Other Windows → DeepSeek Chat**.
+1. Install **DeepSeek AI Assistant**.
+2. Open **View → Other Windows → DeepSeek AI Assistant**.
 3. Open **Settings** and enter your DeepSeek API key.
 4. Save the settings.
 5. Start chatting with DeepSeek.
