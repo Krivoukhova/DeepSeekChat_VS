@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [1.0.1]
+
+### Fixed
+- Declared compatibility with .NET 8 and .NET 10 runtimes to remove the "supports only .NET 8" notice in Visual Studio 2026.
+
 ## [1.0.0]
 
 ### Security

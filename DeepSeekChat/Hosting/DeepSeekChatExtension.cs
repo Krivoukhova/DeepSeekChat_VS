@@ -16,11 +16,17 @@ internal sealed class DeepSeekChatExtension : Microsoft.VisualStudio.Extensibili
     public override ExtensionConfiguration ExtensionConfiguration => new()
     {
         Metadata = new(
-            id: "DeepSeekChatVS.086a659d-7148-4a0f-8edb-498687ffd499",
+            id: "DeepSeekChatVS.086a659d-7148-4a0f-8edb-498687ffd497",
             version: this.ExtensionAssemblyVersion,
             publisherName: "Krivoukhova",
             displayName: "DeepSeek AI Assistant",
-            description: "DeepSeek AI assistant integrated into Visual Studio for working with code."),
+            description: "DeepSeek AI assistant integrated into Visual Studio for working with code.")
+        {
+            // The binaries target net8.0 and run unchanged on newer runtimes. Declaring both versions tells
+            // Visual Studio 2022 (.NET 8) and Visual Studio 2026 (.NET 10 extension host) that the extension is compatible,
+            // so no "declared as supporting only .NET 8" warning is shown.
+            DotnetTargetVersions = new[] { DotnetTarget.Custom("net8.0"), DotnetTarget.Custom("net10.0") },
+        },
     };
 
     /// <summary>
