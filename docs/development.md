@@ -7,7 +7,7 @@
 - The **Visual Studio extension development** workload for local development.
 - .NET 8 SDK.
 
-The project targets `net8.0-windows8.0` and references the `Microsoft.VisualStudio.Extensibility` SDK and build packages in the 17.14 release line.
+The project targets `net8.0-windows8.0` and declares `net8.0` and `net10.0` as supported runtimes in `DeepSeekChatExtension.cs` and references the `Microsoft.VisualStudio.Extensibility` SDK and build packages in the 17.14 release line.
 
 ## Clone and build
 

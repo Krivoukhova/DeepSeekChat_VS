@@ -22,6 +22,13 @@ internal sealed class DeepSeekChatExtension : Microsoft.VisualStudio.Extensibili
             displayName: "DeepSeek AI Assistant",
             description: "DeepSeek AI assistant integrated into Visual Studio for working with code.")
         {
+            // Files below are copied into the VSIX by the csproj (Content items).
+            Icon = "icon.png",
+            PreviewImage = "preview.png",
+            License = "LICENSE.txt",
+            MoreInfo = "https://github.com/Krivoukhova/DeepSeekChat_VS",
+            Tags = new[] { "AI", "DeepSeek", "Chat", "Code Assistant", "Refactoring" },
+            Preview = false,
             // The binaries target net8.0 and run unchanged on newer runtimes. Declaring both versions tells
             // Visual Studio 2022 (.NET 8) and Visual Studio 2026 (.NET 10 extension host) that the extension is compatible,
             // so no "declared as supporting only .NET 8" warning is shown.

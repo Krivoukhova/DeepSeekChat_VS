@@ -10,6 +10,10 @@ for explaining and refactoring selected code.
 > **Project status:** Community-maintained, open-source software. This project is
 > not affiliated with, endorsed by, or supported by DeepSeek or Microsoft.
 
+<p align="center">
+  <img src="docs/images/main.png" alt="DeepSeek AI Assistant in Visual Studio">
+</p>
+
 ## Features
 
 - Chat tool window available from **View → Other Windows → DeepSeek AI Assistant**.
@@ -18,21 +22,46 @@ for explaining and refactoring selected code.
 - Model selection, chat history with conversation context sent to the model, account balance/key status, and configurable display name.
 - Multiple interface languages and themes.
 
+## Screenshots
+
+| Chat | Chat history |
+| --- | --- |
+| ![Chat](docs/images/chat.png) | ![Chat history](docs/images/chat-history.png) |
+
+| Attachments | Model selection |
+| --- | --- |
+| ![Adding a file](docs/images/adding-file.png) | ![Choosing a model](docs/images/choose-model.png) |
+
+| Account | Settings |
+| --- | --- |
+| ![Account](docs/images/account.png) | ![Settings](docs/images/settings.png) |
+
 The available models and capabilities are defined in `DeepSeekChat/Models/ChatModels.cs`.
 Availability is subject to the DeepSeek API account, model access, and upstream API changes.
 
 ## Requirements
 
 - Windows.
-- Visual Studio 2022 17.14 or later, or a compatible newer Visual Studio release.
-- The **Visual Studio extension development** workload for local development.
-- .NET 8 SDK.
+- Visual Studio 2022 17.14 or later, or Visual Studio 2026.
 - A DeepSeek API key for live requests.
 
+To build from source you also need the **Visual Studio extension development**
+workload and the .NET 8 SDK.
+
 The extension targets `net8.0-windows8.0` and references the 17.14
-`Microsoft.VisualStudio.Extensibility` SDK packages.
+`Microsoft.VisualStudio.Extensibility` SDK packages. It runs out of process in the
+.NET runtime supplied by Visual Studio itself (.NET 8 in Visual Studio 2022, .NET 10 in
+Visual Studio 2026), so no separate runtime needs to be installed. Both runtimes are
+declared in the extension metadata (`DotnetTargetVersions`). When the extension runs
+from a Debug build, Visual Studio shows a flask icon next to it; Release builds do not.
 
 ## Install
+
+### From Visual Studio Marketplace
+
+Open **Extensions → Manage Extensions**, search for **DeepSeek AI Assistant**,
+and click **Install**. Restart is not required for this out-of-process extension,
+but Visual Studio may ask to close for the installer.
 
 ### From a VSIX package
 

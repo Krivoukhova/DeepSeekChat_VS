@@ -24,6 +24,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Files referenced from the extension metadata (icon, details image, license) must be in the package. -->
+    <Content Include="icon.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="preview.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <!-- Remote UI XAML must be an embedded resource whose name matches the RemoteUserControl class. -->
     <EmbeddedResource Include="UI\DeepSeekChatContent.xaml" LogicalName="DeepSeekChat.UI.DeepSeekChatContent.xaml" />
     <Page Remove="UI\DeepSeekChatContent.xaml" />
